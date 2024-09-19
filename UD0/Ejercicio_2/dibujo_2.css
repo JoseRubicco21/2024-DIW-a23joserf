@@ -1,0 +1,22 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    height: 45vh;
+    margin: 10px;
+}
+
+main {
+    border: 5px dashed black
+}
+
+div:nth-child(1) {
+    background-color:coral;
+}
+
+div:nth-child(2) {
+    background-color:dodgerblue;
+}

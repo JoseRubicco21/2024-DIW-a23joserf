@@ -1,0 +1,49 @@
+header, nav, section, aside, footer, article {
+    background-color:#CD5C5C;
+    columns: white; 
+    display: flex;
+    margin: 10px;
+}
+
+header, footer {
+    height: 10vh;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+main>nav, main>aside {
+    width: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main>section {
+    width:  100%;
+}
+
+section>header, section>article, section>footer {
+    background-color: #BDB76B;
+}
+
+article {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 32px;
+}

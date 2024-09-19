@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  color: #c0c;
+  font-size: 24px;
+}
+/*
+* Ids 
+* */
+
+#main {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+}
+
+/*Usar px o vh no es la mejor idea peeero bueno es lo que hay*/
+#navegacion {
+  background-color: darkgray;
+  width: 20vh;
+}
+
+#navegacion>ul {
+  list-style: none;
+  padding-top: 30px;
+}
+
+#navegacion>ul>li>a {
+  color: lightgreen;
+  padding: 10px;
+}
+
+#cabeceira {
+  color: #ff9;
+  display:flex;
+  height: 10vh;
+  padding: 10px;
+  align-items: center;
+  background-color: black;
+}
+
+
+#contido {
+  background-color: #ddd;
+  float: right;
+  padding: 10px;
+  width: 560px;
+}
+
+#pe {
+  display: flex;
+  background-color: gray;
+  color: darkred;
+  height: 10vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

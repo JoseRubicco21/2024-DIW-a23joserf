@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./main.css" type="text/css"> -->
+  <style>
+    body {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  color: #c0c;
+  font-size: 24px;
+}
+/*
+* Ids 
+* */
+
+#main {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+}
+
+/*Usar px o vh no es la mejor idea peeero bueno es lo que hay*/
+#navegacion {
+  background-color: darkgray;
+  width: 20vh;
+}
+
+#navegacion>ul {
+  list-style: none;
+  padding-top: 30px;
+}
+
+#navegacion>ul>li>a {
+  color: lightgreen;
+  padding: 10px;
+}
+
+#cabeceira {
+  color: #ff9;
+  display:flex;
+  height: 10vh;
+  padding: 10px;
+  align-items: center;
+  background-color: black;
+}
+
+
+#contido {
+  background-color: #ddd;
+  float: right;
+  padding: 10px;
+  width: 560px;
+}
+
+#pe {
+  display: flex;
+  background-color: gray;
+  color: darkred;
+  height: 10vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+  </style>
+  </head>
+<body>
+  <div id="cabeceira">
+          <p>Párrafo en la cabecera de la página.</p>
+  </div>
+  <div id="main">
+  <div id="navegacion">
+      <ul>
+        <li><a href="#">Enlace 1</a></li>
+        <li><a href="#">Enlace 2</a></li>
+        <li><a href="#">Enlace 3</a></li>
+      </ul>
+  </div>
+  <div id="contido">
+    <h1>Elemplo: Uso del elemento "div" y el atributo <i>id</i></h1>
+  </div>
+  </div>
+  <div id="pe">
+    <p>Párrafo en el pie de la página</p>
+  </div>
+</body>
+</html>
