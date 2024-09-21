@@ -1,0 +1,39 @@
+table, td, tr {
+    border: 1px solid black;;
+}
+
+label {
+    font-weight: bold;
+}
+
+.verybold {
+    font-weight: 900;
+}
+
+#nombre, #provincia, #telefono {
+    width: 40%;
+}
+
+#fnac, #dni {
+    width: 18%;
+}
+
+#apellidos, #calle {
+    width: 90%;
+}
+
+#codpostal {
+    width: 10%;
+}
+
+#ciudad {
+    width: 75%;
+}
+
+#comments {
+    width: 90%;
+}
+
+td:has(> input[type='submit']){
+    text-align: center;
+}
