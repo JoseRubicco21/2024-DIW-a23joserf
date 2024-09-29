@@ -1,0 +1,22 @@
+:root {
+    /* Background colors */
+    --bg-light : #5D46BF;
+    --bg : #411E8B;
+    --bg-dark : #39147B;
+
+    /* Accent colors */
+    --accent-light :#42E1E7;
+    --accent : #22CED4;
+    --accent-dark : #069096;
+    
+    /* Text */
+    --text-color: #eeeeee;
+    --heading-color: #ffffff;
+    --bold :  var(--accent);
+    --italic : var(--accent)
+    
+    /*Links*/
+    --link : var(--accent)
+    --link-active : var(--accent-dark)
+    --link-hover :  var(--accent-light)
+}
