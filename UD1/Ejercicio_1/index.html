@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formularios accesibles</title>
+	</head>
+	<body>
+		<h1>Formulario sobre estado de clase</h1>
+		<form action="" style="display: flex; flex-direction: column; width: 300px">
+			<label for="nombre">Nombre</label>
+			<input type="text" name="nombre" id="nombre" aria-required="true" />
+			<label for="apellido">Apellidos</label>
+			<input type="text" name="apellido" id="apellido" aria-required="true" />
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" aria-required="true" />
+			<label for="curso">Curso</label>
+			<select name="curso" id="curso" aria-required="true">
+				<option value="DIW">DIW</option>
+				<option value="DWCC">DWCC</option>
+				<option value="DWCS">DWCS</option>
+				<option value="EIE">EIE</option>
+				<option value="DAPW">DAPW</option>
+			</select>
+			<label for="Radio">Status</label>
+			<div>
+				<label for="aprobado">Aprobado</label>
+				<input type="radio" name="Radio" id="aprobado" />
+				<label for="repetidor">Repetidor</label>
+				<input type="radio" name="Radio" id="repetidor" />
+				<label for="opcional">Opcional</label>
+				<input type="radio" name="Radio" id="opcional" />
+			</div>
+			<div>
+				<input
+					type="reset"
+					value="Reiniciar"
+					aria-label="Reiniciar los datos del formulario"
+				/>
+				<input
+					type="submit"
+					value="Enviar"
+					aria-label="Enviar los datos del formulario"
+				/>
+			</div>
+		</form>
+	</body>
+</html>

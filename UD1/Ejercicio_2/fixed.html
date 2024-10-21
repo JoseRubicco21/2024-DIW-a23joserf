@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>¡Súper Noticias Mundiales!</title>
+		<style>
+			:root {
+				--background: #dad2bc;
+				--background-dark: #a99985;
+				--background-darker: #6d6050;
+				--accent-light: #f5f1ed;
+				--text-light: #dacccc;
+				--text: #252323;
+				--text-dimmed: #4d4a4a54;
+			}
+
+			body {
+				display: flex;
+				flex-direction: column;
+				margin: 0 auto;
+
+				background-color: var(--background);
+				font-family: 'Times New Roman', Times, serif;
+				font-size: 16px;
+				color: var(--text);
+			}
+
+			main {
+				display: flex;
+				flex-direction: row;
+				height: 80vh;
+			}
+
+			aside {
+				display: flex;
+				flex-direction: column;
+			}
+
+			h1 {
+				font-size: 50px;
+				text-align: center;
+				color: var(--text-light);
+			}
+
+			nav {
+				width: 150px;
+				background-color: var(--background-dark);
+				padding: 20px;
+				font-size: 18px;
+			}
+
+			nav ul {
+				list-style: none;
+				padding: 0px;
+			}
+
+			nav ul li {
+				margin-bottom: 10px;
+				border-bottom: 1px solid var(--text-dimmed);
+			}
+
+			header {
+				background-color: var(--background-darker);
+			}
+
+			footer {
+				display: flex;
+				justify-content: center;
+				background-color: var(--background-darker);
+				padding: 20px;
+			}
+
+			footer > div {
+				margin: 10px;
+			}
+
+			button {
+				background-color: var(--background-darker);
+				padding: 10px;
+				margin: 10px;
+				border: none;
+				color: var(--text-light);
+			}
+
+			button:hover {
+				background-color: var(--text);
+			}
+
+			.terms-and-conditions {
+				color: var(--accent-light);
+				text-decoration: underline;
+			}
+
+			.banner {
+				background-color: var(--background-darker);
+				font-size: 30px;
+				text-align: center;
+				padding: 20px;
+				font-weight: bold;
+			}
+
+			.content {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.column {
+				width: 33%;
+				padding: 20px;
+			}
+
+			.ads,
+			.social {
+				font-size: 20px;
+				color: #fff;
+				background-color: var(--background-darker);
+				padding: 10px;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			.popup {
+				display: none;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background-color: var(--background-dark);
+				padding: 50px;
+				border: 5px solid var(--background-darker);
+				text-align: center;
+			}
+
+			.show-popup {
+				display: block;
+			}
+
+			/*
+			@keyframes blink {
+				0% {
+					opacity: 1;
+				}
+				50% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			         */
+			/*
+			   @keyframes colorchange {
+				0% {
+					background-color: #00ff00;
+				}
+				50% {
+					background-color: #ff00ff;
+				}
+				100% {
+					background-color: #00ff00;
+				}
+			}
+			         */
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>¡Súper Noticias Mundiales y Todo lo que Te Imaginas!</h1>
+		</header>
+		<main class="content">
+			<section class="column">
+				<nav>
+					<ul>
+						<li>Inicio</li>
+						<li>Últimas Noticias</li>
+						<li>Compras</li>
+						<li>Tecnología</li>
+						<li>Deportes</li>
+						<li>Entretenimiento</li>
+						<li>Política</li>
+						<li>Estilo de Vida</li>
+						<li>Viajes</li>
+						<li>Clima</li>
+						<li>Horóscopo</li>
+						<li>Recetas</li>
+						<li>Historia</li>
+						<li>Misterios</li>
+						<li>Foro</li>
+						<li>Chat en Vivo</li>
+					</ul>
+				</nav>
+			</section>
+			<section class="column">
+				<article>
+					<h2>Noticias Importantes</h2>
+					<p>
+						<strong>¡NOTICIA DE ÚLTIMA HORA!</strong>
+						<!--(con una imagen gigante de
+						5MB que tarda en cargar).-->
+					</p>
+				</article>
+				<p><strong>CLIC AQUÍ PARA LEER MÁS NOTICIAS IMPORTANTES</strong></p>
+			</section>
+			<aside class="column">
+				<article class="ads">
+					¡OFERTAS! 70% de descuento en productos que no sabías que querías.
+				</article>
+				<article class="ads">
+					¡Compra ahora y recibe un descuento adicional!
+				</article>
+				<div class="popup" id="popup">
+					¿Estás seguro de que no quieres recibir nuestras notificaciones?
+					<br /><button onclick="hidePopup()">No, gracias</button>
+				</div>
+				<div class="banner">
+					¡OFERTAS! ¡DESCUENTOS! ¡NO TE LO PIERDAS! ¡CLICA AHORA Y GANA UN
+					IPHONE GRATIS!
+				</div>
+			</aside>
+		</main>
+
+		<footer>
+			<div class="social">¡Síguenos en nuestras redes sociales AHORA!</div>
+
+			<div class="social">¡Comparte esto con tus amigos!</div>
+			<div>
+				<p class="terms-and-conditions">
+					<strong>
+						Términos y condiciones en letra diminuta que nadie puede leer.
+					</strong>
+				</p>
+			</div>
+			<div>
+				<p>Enlaces a otros 30 sitios que quizá te interesen.</p>
+			</div>
+		</footer>
+		<script>
+			function showPopup() {
+				document.getElementById('popup').classList.add('show-popup');
+			}
+
+			function hidePopup() {
+				document.getElementById('popup').classList.remove('show-popup');
+			}
+			// Se borra el timemout para que solo ocurra al cargar la página.
+			//setTimeout(showPopup, 5000);
+			showPopup();
+		</script>
+	</body>
+</html>
